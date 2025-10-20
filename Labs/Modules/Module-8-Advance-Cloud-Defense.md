@@ -6,9 +6,22 @@
 #### ⌛ Estimated time to complete this lab: 60 minutes
 
 ## Objectives
-In this exercise, you will understand how to use just-in-time (JIT) for virtual machines to reduce your attack surface. Moreover, you will understand the benefits of file integrity monitoring (FIM).
+Defender for Servers offers threat detection and advanced cloud defense capabilities for compute workloads. This includes Just In Time (JIT) VM Access to protect a machine's management ports and File Integrity Monitoring (FIM) to track changes and running applications on machines, but also OS-level threat detection offered by Microsoft Defender for Endpoint, and network layer threat detection for Azure VMs, including DNS- and network-based attacks.
+In this exercise, you will understand how some of these enhanced capabilities in Defender for Servers Plan 2 are enabled to help you protect compute workloads in cloud environments.
 
-### Exercise 1: Using JIT to reduce attack surface
+### Exercise 1: Enable Microsoft Defender for Servers Plan 2
+To enable the Defender plan on a specific subscription:
+1.	Sign into the **Azure portal**.
+2.	Navigate to **Microsoft Defender for Cloud**, then **Environment settings**.
+3.	Select the relevant subscription.
+4.  Locate Servers. 
+5.	Ensure the **Status** is toggled **On**.
+6.	Click on **Settings** and ensure all of them are toggled **On**.
+7. Click **Continue** and **Save**. 
+
+Now all your existing and upcoming Azure VMs and Azure Arc-enabled servers are protected.
+
+### Exercise 2: Using JIT to reduce attack surface
 
 1.	From Microsoft Defender for Cloud sidebar, click on **Workload Protections**.
 2.	On the Advanced protection part at the bottom, click on **Just-in-time VM access** (You should see 2 unprotected status).
@@ -37,52 +50,37 @@ In this exercise, you will understand how to use just-in-time (JIT) for virtual 
 13.	Now you should get the prompt for the local admin credentials. **Type your username and password** and click **OK**.
 14.	You **are now connected to asclab-win** server. Close the remote control session/log off.
 
-### Exercise 2: Adaptive Application Control
-
-Application control helps you deal with malicious and/or unauthorized software, by allowing only specific applications to run on your machines.
-
-1.	From Microsoft Defender for Cloud sidebar, click on **Workload Protections**.
-2.	On the Advanced protection part at the bottom, click on **Adaptive application control**.
-
-![](../Images/lab8aac.gif?raw=true)
-3.	The Adaptive application controls page opens with your VMs grouped into the following tabs: Configured, Recommended and No recommendations.
-4.	Click on the **Recommended** tab.
-5.	If this tab does not contain any group yet, it means that Microsoft Defender for Cloud needs at least two weeks of data to define the unique recommendations per group of machines.
-
 ### Exercise 3: File Integrity Monitoring
 
-File integrity monitoring (FIM), also known as change monitoring, examines operating system files, Windows registries, application software, Linux system files, and more, for changes that might indicate an attack.
-It maps the current state of these items with the state during the previous scan and alerts you if suspicious modifications have been made. To enable FIM, follow the instructions below:
+File integrity monitoring (FIM) scans and analyzes operating system files, Windows registries, application software, Linux system files for changes that might indicate an attack. To enable FIM, follow the instructions below:
 
-1.	From Microsoft Defender for Cloud sidebar, click on **Workload Protections**.
-2.	On the Advanced protection part at the bottom, click on **File Integrity Monitoring** tile.
-3.	On the FIM configuration page, select the Log Analytics workspace **asclab-la-xxx**.
+1.	From Microsoft Defender for Cloud menu, select **Environment Settings**.
+2.	Select the relevant subscription.
+3.	Locate the Defender for Servers plan and select **Settings**.
+4.  In the **File Integrity Monitoring** section, switch the toggle to **On**. Then select **Edit configuration**.
 ![](../Images/mdfc-fim.png?raw=true)
-4.	On the Enable FIM, **review the default recommended settings** for Windows files, Registry and Linux files.
-5.	Click on **Enable File Integrity Monitoring** button.
+5.	The **FIM configuration** pane opens. In the **Workspace selection** dropdown, select the workspace where you want to store the file integrity monitoring data. If you want to create a new workspace, select **Create new**.
+![](../Images/lab8-fimconf1.png?raw=true)
+6.  In the lower section of the **FIM configuration** pane, select the **Windows registry**, **Windows files**, and **Linux files** tabs to choose the files and registries you want to monitor. If you choose the top selection in each tab, all files and registries are monitored. Select **Apply** to save your changes.
+![](../Images/lab8-fimconf2.png?raw=true)
+7.  Select **continue**.
+8.  Select **Save**.
 
-![](../Images/mdfc-enablefim.png?raw=true)
+#### Review FIM findings
+1.  In the Defender for Cloud navigation menu, go to **Workload protection** > **File integrity monitoring**.
+![](../Images/lab8-reviewfim1.png?raw=true)
+2.  Review the total amount of **Changes** in your environment and the amount of **Total changes** per machine.
+![](../Images/lab8-reviewfimresults.png?raw=true)
+3.  FIM results are exported to the Log Analytics workspace you selected at the beginning of this exercise. To review the results, select a machine or subscription from the view. 
+![](../Images/lab8-reviewfimresults2.png?raw=true)
 
-You'll now be able to track changes to files in resource associated with the log analytics workspace.
-
-![](../Images/mdfc-fimtrack.png?raw=true)
-
-### Exercise 4: Enable the integration with Microsoft Defender for Endpoint for Windows
-
-[Workload Protections for servers](https://docs.microsoft.com/en-gb/azure/security-center/defender-for-servers-introduction) includes an integrated license for [Microsoft Defender for Endpoint](https://www.microsoft.com/microsoft-365/security/endpoint-defender). Together, they provide comprehensive endpoint detection and response (EDR) capabilities.
-When Defender for Endpoint detects a threat, it triggers an alert. The alert is shown in Microsoft Defender for Cloud. From Microsoft Defender for Cloud, you can also pivot to the Defender for Endpoint console, and perform a detailed investigation to uncover the scope of the attack.
- 
- 
-If you've never enabled the integration for Windows, the Allow Microsoft Defender for Endpoint to access my data option will enable Microsoft Defender for Cloud to deploy Defender for Endpoint to both your Windows and Linux machines.
-1.	From Microsoft Defender for Cloud's menu, select **Environment settings** and select the subscription (**Azure Subscription 1**) with the Linux machines that you want to receive Defender for Endpoint.
-2.	Then select **Integrations** from the sidebar.
-
-![](../Images/mdfc-integrations.png?raw=true)
-
-3.	Select **Allow Microsoft Defender for Endpoint** to access my data (if it's not already on), and select **Save**.
-
-Microsoft Defender for Cloud will:
-1.	Automatically onboard your Windows and Linux machines to Defender for Endpoint
-2.	Ignore any Linux machines that are running other fanotify-based solutions (see details of the fanotify kernel option required in [Linux system requirements](https://docs.microsoft.com/en-us/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-linux#system-requirements))
-3.	Detect any previous installations of Defender for Endpoint and reconfigure them to integrate with Microsoft Defender for Cloud.
-Onboarding might take up to 24 hours.
+#### Review configuration status for FIM
+Review the FIM enablement to ensure it is correct and all prerequisites are met.
+1.  In the Defender for Cloud navigation menu, go to **Workload protection** > **File integrity monitoring**.
+![](../Images/lab8-reviewfim1.png?raw=true)
+2.  Select **Settings**.
+![](../Images/lab8-reviewfim2.png?raw=true)
+3.  Check for missing prerequisites.
+4.  Select a subscription and review corrective actions if necessary. You will see all subscription that have/don't have FIM enabled.
+![](../Images/lab8-reviewfim3.png?raw=true)
+5.  Select **Apply**.

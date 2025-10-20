@@ -21,6 +21,7 @@ Advanced | 300+ | You have lots of experience and are looking to learn about adv
 
 * Version 1.0 - General availability of Microsoft Defender for Cloud labs
 * Version 2.0 - General availability of Microsoft Defender for Cloud labs version 2 (November 2021)
+* Version 3.0 - General availability of Microsoft Defender for Cloud labs version 3 (May 2024)
 
 ## Modules
 
@@ -63,14 +64,15 @@ Advanced | 300+ | You have lots of experience and are looking to learn about adv
 - [Integration with Microsoft Sentinel](./Modules/Module-7-Exporting-ASC-information-to-a-SIEM.md#exercise-2-integration-with-azure-sentinel)
 
 [**Module 8 – Enhanced Security (L300)**](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-8-Advance-Cloud-Defense.md)
-- [Using JIT to reduce attack surface](./Modules/Module-8-Advance-Cloud-Defense.md#exercise-1-using-jit-to-reduce-attack-surface)
-- [Adaptive Application Control](./Modules/Module-8-Advance-Cloud-Defense.md#exercise-2-adaptive-application-control)
-- [File Integrity Monitoring](./Modules/Module-8-Advance-Cloud-Defense.md#exercise-3-file-integrity-monitoring)
+- [Exercise 1: Enable Defender for Servers Plan 2](./Modules/Module-8-Advance-Cloud-Defense.md#exercise-1-enable-microsoft-defender-for-servers-plan-2)
+- [Exercise 2: Using JIT to reduce attack surface](./Modules/Module-8-Advance-Cloud-Defense.md#exercise-2-using-jit-to-reduce-attack-surface)
+- [Exercise 3: Adaptive Application Control](./Modules/Module-8-Advance-Cloud-Defense.md#exercise-3-adaptive-application-control)
+- [Exercise 4: File Integrity Monitoring](./Modules/Module-8-Advance-Cloud-Defense.md#exercise-4-file-integrity-monitoring)
 
-[**Module 9 – Defender for Containers (L300)**](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-9-Defender-For-Containers.md)
+[**Module 9 – Defender for Containers (L300)**](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-9-Agentless-Container-Vulnerability-Assessment-Scanning.md)
 - [Install Docker Desktop](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-1-Preparing-the-Environment.md)
-- [Download vulnerable image from Docker Hub into the Container Registry](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-9-Defender-For-Containers.md#exercise-2-download-vulnerable-image-from-docker-hub-into-the-container-registry)
-- [Investigate the recommendation for vulnerabilities in ACR](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-9-Defender-For-Containers.md#exercise-3-investigate-the-recommendation-for-vulnerabilities-in-acr)
+- [Download vulnerable image from Docker Hub into the Container Registry](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-9-Agentless-Container-Vulnerability-Assessment-Scanning.md#exercise-2-download-vulnerable-image-from-docker-hub-into-the-container-registry)
+- [Investigate the recommendation for vulnerabilities in ACR](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-9-Agentless-Container-Vulnerability-Assessment-Scanning.md#exercise-3-investigate-the-recommendation-for-vulnerabilities-in-acr)
 
 [**Module 10 – GCP (L300)**](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-10-GCP.md)
 - [Create a GCP project](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-10-GCP.md#exercise-1-create-a-gcp-project)
@@ -81,34 +83,36 @@ Advanced | 300+ | You have lots of experience and are looking to learn about adv
 - [Create an AWS account](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-11-AWS.md#exercise-1-create-an-aws-account)
 - [Create an AWS connector for the new AWS account in Microsoft Defender for Cloud](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-11-AWS.md#exercise-2-create-an-aws-connector-for-the-new-aws-account-in-microsoft-defender-for-cloud)
 
-[**Module 12 – Defender for Azure Cosmos DB (L300)**](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-12-Microsoft-Defender-for-Cloud-database-protection.md)
+[**Module 12 – Database Protections (L300)**](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-12-Microsoft-Defender-for-Cloud-database-protection.md)
 - [Enable Defender for SQL servers on machines plan](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-12-Microsoft-Defender-for-Cloud-database-protection.md#exercise-1-enable-defender-for-sql-servers-on-machines-plan)
 - [Enable and protect your Azure SQL Databases using Microsoft Defender for Azure SQL Databases](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-12-Microsoft-Defender-for-Cloud-database-protection.md#exercise-2-enable-and-protect-your-azure-sql-databases-using-microsoft-defender-for-azure-sql-databases)
 - [Enable and protect your Azure Cosmos DB accounts using Microsoft Defender for Azure Cosmos DB](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-12-Microsoft-Defender-for-Cloud-database-protection.md#exercise-3-enable-and-protect-your-azure-cosmos-db-accounts-using-microsoft-defender-for-azure-cosmos-db)
 - [Enable and protect your OSS RDBs using Microsoft Defender for Open-source relational databases](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-12-Microsoft-Defender-for-Cloud-database-protection.md#exercise-4-enable-and-protect-your-oss-rdbs-using-microsoft-defender-for-open-source-relational-databases)
 
 [**Module 13 – Defender for APIs (L300)**](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-13-Defender%20for%20APIs.md)
-- [Create Azure API Mamanegement Service](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-13-Defender%20for%20APIs.md#exercise-1-create-azure-api-management-service)
-- [Publish an API within API Managament](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-13-Defender%20for%20APIs.md#exercise-2-publish-an-api-within-api-management)
+- [Create Azure API Management Service](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-13-Defender%20for%20APIs.md#exercise-1-create-azure-api-management-service)
+- [Publish an API within API Management](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-13-Defender%20for%20APIs.md#exercise-2-publish-an-api-within-api-management)
 - [Enable Defender for API](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-13-Defender%20for%20APIs.md#exercise-3-enable-defender-for-api)
 - [Onboard APIs to Defender for APIs](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-13-Defender%20for%20APIs.md#exercise-4-onboard-apis-to-defender-for-apis)
 - [Explore the Defender for API tile and look at API recommendations in Defender for Cloud](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-13-Defender%20for%20APIs.md#exercise-5-explore-the-defender-for-api-tile-and-look-at-api-recommendations-in-defender-for-cloud)
 - [Trigger an alert "Suspicious user agent detected"](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-13-Defender%20for%20APIs.md#exercise-6-trigger-an-alert-suspicious-user-agent-detected)
+- [Explore the Data Classifications coming from Microsoft Purview in the Defender for API tile](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-13-Defender%20for%20APIs.md#exercise-7-explore-the-data-classifications-coming-from-microsoft-purview-in-the-defender-for-api-tile)
+- [Build query with Cloud Security Explorer with Defender CSPM](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-13-Defender%20for%20APIs.md#exercise-8-build-query-with-cloud-security-explorer)
 
-[**Module 14 – Configuring Azure ADO Connector in Defender for DevOps (L200)**](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2014-Config%20Azure%20ADO%20in%20DfD.md)
-- [Preparing the environment](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2014-Config%20Azure%20ADO%20in%20DfD.md#exercise-1-preparing-the-environment)
-- [Creating an Azure ADO Trial Subscription](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2014-Config%20Azure%20ADO%20in%20DfD.md#exercise-2-creating-an-azure-ado-trial-subscription)
-- [Configuring Azure ADO Connector](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2014-Config%20Azure%20ADO%20in%20DfD.md#exercise-3-configuring-azure-ado-connector)
-- [Configure the Microsoft Security DevOps Azure DevOps Extension](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2014-Config%20Azure%20ADO%20in%20DfD.md#exercise-4-configure-the-microsoft-security-devops-azure-devops-extension)
-- [Install Free extension SARIF SAST Scans Tab](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2014-Config%20Azure%20ADO%20in%20DfD.md#exercise-5-install-free-extension-sarif-sast-scans-tab)
-- [Configure your pipeline using YAML](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2014-Config%20Azure%20ADO%20in%20DfD.md#exercise-6-configure-your-pipeline-using-yaml)
+[**Module 14 – Configuring Azure DevOps Connector in Defender for Cloud (L200)**](Modules/Module%2014-Onboarding%20Azure%20DevOps%20to%20Defender%20for%20Cloud.md)
+- [Preparing the environment](Modules/Module%2014-Onboarding%20Azure%20DevOps%20to%20Defender%20for%20Cloud.md#exercise-1-preparing-the-environment)
+- [Creating an Azure DevOps Trial Subscription](Modules/Module%2014-Onboarding%20Azure%20DevOps%20to%20Defender%20for%20Cloud.md#exercise-2-creating-an-azure-devops-trial-subscription)
+- [Configuring Azure DevOps Connector](Modules/Module%2014-Onboarding%20Azure%20DevOps%20to%20Defender%20for%20Cloud.md#exercise-3-onboarding-an-azure-devops-connector)
+- [Configure the Microsoft Security DevOps Azure DevOps Extension](Modules/Module%2014-Onboarding%20Azure%20DevOps%20to%20Defender%20for%20Cloud.md#exercise-4-configure-the-microsoft-security-devops-azure-devops-extension)
+- [Install Free extension SARIF SAST Scans Tab](Modules/Module%2014-Onboarding%20Azure%20DevOps%20to%20Defender%20for%20Cloud.md#exercise-5-install-free-extension-sarif-sast-scans-tab)
+- [Configure your pipeline using YAML](Modules/Module%2014-Onboarding%20Azure%20DevOps%20to%20Defender%20for%20Cloud.md#exercise-6-configure-your-pipeline-using-yaml)
 
-[**Module 15 – Integrating Defender for DevOps with GitHub Advanced Security (L200)**](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2015%20-%20Integrating%20Defender%20for%20DevOps%20with%20GitHub%20Advanced%20Security.md)
-- [Preparing the environment](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2015%20-%20Integrating%20Defender%20for%20DevOps%20with%20GitHub%20Advanced%20Security.md#exercise-1-preparing-the-environment)
-- [Creating an GitHub Trial account](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2015%20-%20Integrating%20Defender%20for%20DevOps%20with%20GitHub%20Advanced%20Security.md#exercise-2-creating-an-github-trial-account)
-- [Obtain trial of GitHub Enterprise Cloud account](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2015%20-%20Integrating%20Defender%20for%20DevOps%20with%20GitHub%20Advanced%20Security.md#exercise-3-obtain-trial-of-github-enterprise-cloud-account)
-- [Connecting your GitHub organization](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2015%20-%20Integrating%20Defender%20for%20DevOps%20with%20GitHub%20Advanced%20Security.md#exercise-4-connecting-your-github-organization)
-- [Configure the Microsoft Security DevOps GitHub action](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2015%20-%20Integrating%20Defender%20for%20DevOps%20with%20GitHub%20Advanced%20Security.md#exercise-5-configure-the-microsoft-security-devops-github-action)
+[**Module 15 – Configuring GitHub Connector in Defender for Cloud (L200)**](Modules/Module%2015%20-%20Onboarding%20GitHub%20to%20Defender%20for%20Cloud.md)
+- [Preparing the environment](Modules/Module%2015%20-%20Onboarding%20GitHub%20to%20Defender%20for%20Cloud.md#exercise-1-preparing-the-environment)
+- [Creating an GitHub Trial account](Modules/Module%2015%20-%20Onboarding%20GitHub%20to%20Defender%20for%20Cloud.md#exercise-2-creating-an-github-trial-account)
+- [Obtain trial of GitHub Enterprise Cloud account](Modules/Module%2015%20-%20Onboarding%20GitHub%20to%20Defender%20for%20Cloud.md#exercise-3-obtain-trial-of-github-enterprise-cloud-account)
+- [Connecting your GitHub organization](Modules/Module%2015%20-%20Onboarding%20GitHub%20to%20Defender%20for%20Cloud.md#exercise-4-connecting-your-github-organization)
+- [Configure the Microsoft Security DevOps GitHub action](Modules/Module%2015%20-%20Onboarding%20GitHub%20to%20Defender%20for%20Cloud.md#exercise-5-configure-the-microsoft-security-devops-github-action)
 
 [**Module 16 - Protecting On-Prem Servers in Defender for Cloud (L300)**](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2016%20-%20Protecting%20On-Prem%20Servers%20in%20Defender%20for%20Cloud.md)
 - [Install Hyper-V which will be used to create the server on your own machine](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2016%20-%20Protecting%20On-Prem%20Servers%20in%20Defender%20for%20Cloud.md#exercise-1-install-hyper-v-which-will-be-used-to-create-the-server-on-your-own-machine)
@@ -132,6 +136,59 @@ Advanced | 300+ | You have lots of experience and are looking to learn about adv
 - [Exercise 2: Investigate internet exposed Kubernetes pods through the Cloud Security Explorer](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-18-%20Agentless-container-posture-through-Defender-DCSPM.md#exercise-2-investigate-internet-exposed-kubernetes-pods-through-the-cloud-security-explorer)
 - [Exercise 3: Investigate attack paths](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-18-%20Agentless-container-posture-through-Defender-DCSPM.md#exercise-3-investigate-attack-paths)
 
+[**Module 19 – Defender for Storage**](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2019%20-%20Defender%20for%20Storage.md)
+- [Exercise 1: Preparing the Environment for Defender for Storage plan](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2019%20-%20Defender%20for%20Storage.md#exercise-1-preparing-the-environment-for-defender-for-storage-plan)
+- [Exercise 2: Create a Storage Account](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2019%20-%20Defender%20for%20Storage.md#exercise-2-create-a-storage-account)
+- [Exercise 3: Exclude folder in Windows Security](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2019%20-%20Defender%20for%20Storage.md#optional--exercise-3-exclude-folder-in-windows-security)
+- [Exercise 4: Create EICAR File](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2019%20-%20Defender%20for%20Storage.md#-exercise-4-create-eicar-file)
+- [Exercise 5: Upload Malware to a Storage Account](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2019%20-%20Defender%20for%20Storage.md#-exercise-5-upload-malware-to-a-storage-account)
+- [Exercise 6: Security Alert](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2019%20-%20Defender%20for%20Storage.md#%EF%B8%8F-exercise-6-security-alert)
+- [Exercise 7: Configure automation to delete the malicious file based on security alert](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2019%20-%20Defender%20for%20Storage.md#-exercise-7-configure-automation-to-delete-the-malicious-file-based-on-security-alert)
+- [Exercise 8: Code to upload files to storage account and monitor the blob index tag itself](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2019%20-%20Defender%20for%20Storage.md#-exercise-7-configure-automation-to-delete-the-malicious-file-based-on-security-alert)
+- [Exercise 9: Set up "Send scan results to Log Analytics" and read it](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2019%20-%20Defender%20for%20Storage.md#-exercise-9-set-up-send-scan-results-to-log-analytics-and-read-it)
+- [Exercise 10: Function App based on Event Grid events](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2019%20-%20Defender%20for%20Storage.md#%EF%B8%8F-exercise-10-function-app-based-on-event-grid-events)
+
+[**Module 20 – Contextual Security capabilities for AWS using Defender CSPM**](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2020%20%E2%80%93Contextual%20Security%20capabilities%20for%20AWS%20using%20Defender%20CSPM.md)
+- [Exercise 1: Preparing the AWS Environment for Defender CSPM plan](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2020%20%E2%80%93Contextual%20Security%20capabilities%20for%20AWS%20using%20Defender%20CSPM.md#exercise-1-preparing-the-aws-environment-for-defender-cspm-plan)
+- [Exercise 2: Explore Attack Paths in your AWS Environment](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2020%20%E2%80%93Contextual%20Security%20capabilities%20for%20AWS%20using%20Defender%20CSPM.md#exercise-2-explore-attack-paths-in-your-aws-environment)
+- [Exercise 3: Build query with Cloud Security Explorer](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2020%20%E2%80%93Contextual%20Security%20capabilities%20for%20AWS%20using%20Defender%20CSPM.md#exercise-3-build-query-with-cloud-security-explorer)
+
+[**Module 21 - Contextual Security capabilities for GCP using Defender CSPM**](./Modules/Module%2021%20–%20Contextual%20Security%20capabilities%20for%20GCP%20using%20Defender%20CSPM.md)
+- [Exercise 1: Preparing the GCP Environment for Defender CSPM plan](./Modules/Module%2021%20–%20Contextual%20Security%20capabilities%20for%20GCP%20using%20Defender%20CSPM.md#exercise-1-preparing-the-gcp-environment-for-defender-cspm-plan)
+- [Exercise 2: Explore Attack Paths in your AWS Environment](./Modules/Module%2021%20–%20Contextual%20Security%20capabilities%20for%20GCP%20using%20Defender%20CSPM.md#exercise-2-explore-attack-paths-in-your-aws-environment)
+- [Exercise 3: Build query with Cloud Security Explorer](./Modules/Module%2021%20–%20Contextual%20Security%20capabilities%20for%20GCP%20using%20Defender%20CSPM.md#exercise-3-build-query-with-cloud-security-explorer)
+
+[**Module 22 - Integration with Microsoft Defender for Endpoint**](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-22-MDE-integration.md)
+- [Exercise 1: Enable the integration with Microsoft Defender for Endpoint](./Modules/Module-22-MDE-integration.md#exercise-1-enable-the-integration-with-microsoft-defender-for-endpoint)
+- [Exercise 2: Connect your on-premises servers via direct onboarding](./Modules/Module-22-MDE-integration.md#exercise-2-connect-your-on-premises-servers-via-direct-onboarding)
+- [Exercise 3: Analyze vulnerability assessment findings in custom workbooks](./Modules/Module-22-MDE-integration.md#exercise-3-analyze-vulnerability-assessment-findings-in-custom-workbooks)
+
+[**Module 23 - Data-aware security posture**](./Modules/Module%2023%20-%20Data%20security%20posture%20management.md)
+- [Exercise 1: Enabling sensitive data discovery](./Modules/Module%2023%20-%20Data%20security%20posture%20management.md#exercise-1-enabling-sensitive-data-discovery)
+- [(Optional) Exercise 2: Enabling sensitive data discovery for AWS and GCP](./Modules/Module%2023%20-%20Data%20security%20posture%20management.md#optional-exercise-2-enabling-sensitive-data-discovery-for-aws-and-gcp)
+- [Exercise 3: Configure sensitive data categories](./Modules/Module%2023%20-%20Data%20security%20posture%20management.md#optional-exercise-4-import-and-configure-custom-sensitive-info-types-and-sensitivity-labels)
+- [Exercise 5: Upload sensitive data](./Modules/Module%2023%20-%20Data%20security%20posture%20management.mdexercise-5-upload-sensitive-data)
+- [Exercise 6: Explore risks with Cloud Security Explorer](./Modules/Module%2023%20-%20Data%20security%20posture%20management.md#exercise-6-explore-risks-with-cloud-security-explorer)
+- [Exercise 7: Identify sensitive resources in Inventory](./Modules/Module%2023%20-%20Data%20security%20posture%20management.md#exercise-7-identify-sensitive-resources-in-inventory)
+- [(Optional) Exercise 8: Explore risks through attack paths](./Modules/Module%2023%20-%20Data%20security%20posture%20management.md#exercise-7-identify-sensitive-resources-in-inventory)
+- [(Optional) Exercise 9: Explore sensitive data security alerts](./Modules/Module%2023%20-%20Data%20security%20posture%20management.md#optional-exercise-9-explore-sensitive-data-security-alerts)
+- [(Optional) Exercise 10: Data security dashboard investigation](./Modules/Module%2023%20-%20Data%20security%20posture%20management.md#optional-exercise-9-explore-sensitive-data-security-alerts)
+
+[**Module 24 - Security for AI Workloads**](./Modules/Module%2024%20-%20AI%20Workloads.md)
+* [Exercise 1: Enable AI Workloads](./Modules/Module%2024%20-%20AI%20Workloads.md#Exercise-1:-Enable-AI-Workloads)
+* [Exercise 2: Simulate Jailbreak Attacks](./Modules/Module%2024%20-%20AI%20Workloads.md#Exercise-2:-Simulate-Jailbreak-Attacks)
+
+[**Module 25 - Defender XDR Integration**](./Modules/Module%2025%20-%20Defender%20XDR%20Integration.md)
+
+* [Exercise 1: Setting Up the Environment](./Modules/Module%2025%20-%20Defender%20XDR%20Integration.md#step-1-setting-up-the-environment)
+* [Exercise 2: Deploying the Attack Simulation](./Modules/Module%2025%20-%20Defender%20XDR%20Integration.md#step-2-deploying-the-attack-simulation)
+* [Exercise 3: Running Individual and Combined Attack Scenarios](./Modules/Module%2025%20-%20Defender%20XDR%20Integration.md#step-3-running-individual-and-combined-attack-scenarios)
+* [Exercise 4: Observing and Analyzing MDC Alerts](./Modules/Module%2025%20-%20Defender%20XDR%20Integration.md#step-4-observing-and-analyzing-mdc-alerts)
+* [Exercise 5: Correlating and Responding to Incidents Using XDR](./Modules/Module%2025%20-%20Defender%20XDR%20Integration.md#step-5-correlating-and-responding-to-incidents-using-xdr)
+
+[**Module 26 - Code Reachability Vulnerabilities**](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2026%20-%20Code%20Reachability%20Vulnerabilities.md)
+* [Exercise 1: Azure DevOps Configuration](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2026%20-%20Code%20Reachability%20Vulnerabilities.md#exercise-1-azure-devops-configuration)
+* [Exercise 2: GitHub Configuration](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module%2026%20-%20Code%20Reachability%20Vulnerabilities.md#exercise-2-github-configuration)
 
 [**Begin the labs here >**](https://github.com/Azure/Microsoft-Defender-for-Cloud/blob/main/Labs/Modules/Module-1-Preparing-the-Environment.md)
 

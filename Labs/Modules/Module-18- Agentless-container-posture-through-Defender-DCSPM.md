@@ -19,7 +19,7 @@ Learn how to enable how to enable agentless container security posture: [One cli
 
 ## **Exercise 1: Prepare your environment.**
 
-Before we set up the resources to be used for this lab, we first need to turn on agentless discovery of Kubernetes and agentless container image scanning in Defender CSPM. You can do this in the Defender for Cloud portal by going to Environment Settings. Once you select your Azure Subscription, make sure Defender CSPM is turned on, click monitoring coverage and turn on “Agentless discovery for Kubernetes” and “Container registries vulnerability assessments”.
+Before we set up the resources to be used for this lab, we first need to turn on agentless discovery of Kubernetes and agentless container image scanning in Defender CSPM. Note that Defender for Containers also provides agentless container image scanning but does not include attack paths. You can enable agentless container posture in the Defender for Cloud portal by going to Environment Settings. Once you select your Azure Subscription, make sure Defender CSPM is turned on, click monitoring coverage and turn on “Agentless discovery for Kubernetes” and “Container registries vulnerability assessments”.
 
 ![](../Images/enablecontainersdcspm.png?raw=true)
 
@@ -64,7 +64,7 @@ az aks get-credentials  --subscription <your-subscriptionid> --resource-group <y
 **4.	Deploy a mock vulnerable image and expose the vulnerable container to the internet.**
 
 ```
-helm install dcspmcharts oci://dcspmtesting.azurecr.io/dcspmcharts --version 1.0.0  --namespace mdc-dcspm-demo --create-namespace --set registry=<your-registry>
+helm install dcspmcharts  oci://mcr.microsoft.com/mdc/stable/dcspmcharts --version 1.0.0 --namespace mdc-dcspm-demo --create-namespace --set image=<your-acr-name.azurecr.io/mdc-mock-0001> --set distribution=AZURE
 ```
 
 **5.	Verify success of the deployment:**
@@ -148,4 +148,5 @@ In exercise one, we exposed our Kubernetes Service to the internet and ran a hig
 In the attach path, you will notice it detected the namespace “mdc-dcspm-demo”, container “hello-contoso” and the image “mdc-mock-001”, all of which we deployed in Exercise 1. With the attack path, you can see all the resource types involved in this path as well as how they are related. For example, the attack path shows you that the “mdc-dcspm-demo” is contained inside the asclab cluster and routes traffic to the service we deployed for internet exposure.
 To see how to remediate the attack path, scroll down to the “Remediation Steps” and navigate to the “Recommendations” tab. 
 
-![](../Images/remediateattackpath.png?raw=true)
+![](../Images/attackpathVArecommendation.png?raw=true)
+
